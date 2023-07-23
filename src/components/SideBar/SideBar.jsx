@@ -4,13 +4,13 @@ import Menu from '../Menu/Menu';
 
 function SideBar() {
   const menuList = [
-    { name: '소메뉴 1', path: '/detail' },
-    { name: '소메뉴 2', path: '/detail2' }
+    { name: '소메뉴', path: '/detail' },
+    { name: '소메뉴', path: '/detail2' }
   ];
 
   const menuList2 = [
-    { name: '소메뉴 3', path: '/detail3' },
-    { name: '소메뉴 4', path: '/detail4' }
+    { name: '소메뉴', path: '/detail3' },
+    { name: '소메뉴', path: '/detail4' }
   ];
   return (
     <StSideBarContainer>
