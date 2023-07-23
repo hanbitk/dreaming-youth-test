@@ -11,17 +11,20 @@ export const GlobalStyles = createGlobalStyle`
     --color-primary: #024EEE;
     --color-primary-light: #DBE1FD;
     --color-primary-hover: #003AD6;
-    --color-gray: #565656;
+    --color-dark-gray: #565656;
+    --color-gray: #E0E4E8;
     --color-light-gray: #DEDEDE;
+    --color-cool-gray: #F6F7F8;
     --color-gray-hover: #F0F2F3;
+    --color-gray-inactive: #777777;
 
     /* ============FONT SIZE============ */
     --font-extra-large: 40px;
     --font-large: 32px;
     --font-medium: 26px;
-    --font-regular: 16px;
-    --font-small: 14px;
-    --font-micro: 12px;
+    --font-regular: 14px;
+    --font-small: 12px;
+    --font-micro: 10px;
 
     /* ============FONT WEIGHT============ */
     --weight-bold: 700;
@@ -46,7 +49,7 @@ export const GlobalStyles = createGlobalStyle`
 
 body{
     background-color: var(--color-white);
-    color: var(--color-light-black);
+    color: var(--color-dark-black);
 }
 
 button{
