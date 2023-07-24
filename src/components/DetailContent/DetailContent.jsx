@@ -9,6 +9,7 @@ import {
 } from '../../styles/DetailContent.styles';
 import Button from '../Button/Button';
 import Input from '../Input/Input';
+import Info from '../Info/Info';
 
 function DetailContent() {
   return (
@@ -18,12 +19,21 @@ function DetailContent() {
       </StDetailHeader>
       <StDetailForm>
         <StDetailFormBox>
+          {/* 정보 1 */}
           <StInfo>
-            <label>정보 1</label>
-            <p>정보 내용</p>
+            <Info title='정보 1' description='정보 내용 1' />
           </StInfo>
+          {/* 정보 2 */}
           <StInfo>
-            <Input />
+            <Input label='정보 2' />
+          </StInfo>
+          {/* 정보 3 */}
+          <StInfo>
+            <Info title='정보 3' description='정보 내용 3' />
+          </StInfo>
+          {/* 정보 4 */}
+          <StInfo>
+            <Input label='정보 4' />
           </StInfo>
         </StDetailFormBox>
         <StDetailFormButton>

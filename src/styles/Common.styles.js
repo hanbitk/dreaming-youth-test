@@ -18,9 +18,7 @@ export const StButton = styled.button`
 `;
 
 // INPUT STYLE //
-
-export const StInputBox = styled.div`
-  border: 1px solid blue;
+export const StDiv = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
@@ -41,4 +39,9 @@ export const StInput = styled.input`
   border-radius: 5px;
   padding: 5px 12px;
   color: var(--color-light-black);
+`;
+
+// INFO STYLE //
+export const StInfoTitle = styled.p`
+  width: 140px;
 `;

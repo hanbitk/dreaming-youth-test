@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { StInput, StInputBox, StLabel } from '../../styles/Common.styles';
+import { StDiv, StInput, StLabel } from '../../styles/Common.styles';
 
-function Input() {
+function Input({ label }) {
   const [isFocused, setIsFocused] = useState(false);
 
   const handleFocusBlurInput = () => {
@@ -9,14 +9,14 @@ function Input() {
   };
 
   return (
-    <StInputBox>
-      <StLabel>정보2</StLabel>
+    <StDiv>
+      <StLabel>{label}</StLabel>
       <StInput
         onFocus={handleFocusBlurInput}
         onBlur={handleFocusBlurInput}
         $isFocused={isFocused}
       />
-    </StInputBox>
+    </StDiv>
   );
 }
 
