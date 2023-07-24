@@ -6,12 +6,13 @@ import {
   StDetailFormButton,
   StDetailHeader
 } from '../../styles/DetailContent.styles';
+import Button from '../Button/Button';
 
 function DetailContent() {
   return (
     <StDetailContainer>
       <StDetailHeader>
-        <h2>타이틀</h2>
+        <h3>타이틀</h3>
       </StDetailHeader>
       <StDetailForm>
         <StDetailFormBox>
@@ -20,7 +21,9 @@ function DetailContent() {
             <p>정보 내용</p>
           </div>
         </StDetailFormBox>
-        <StDetailFormButton>저장</StDetailFormButton>
+        <StDetailFormButton>
+          <Button>저장</Button>
+        </StDetailFormButton>
       </StDetailForm>
     </StDetailContainer>
   );

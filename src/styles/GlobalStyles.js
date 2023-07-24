@@ -37,7 +37,7 @@ export const GlobalStyles = createGlobalStyle`
     --size-large: 150px;
     --size-medium: 120px;
     --size-small: 80px;
-    --size-border-radius: 10px;
+    --size-border-radius: 5px;
 }
 
 *{

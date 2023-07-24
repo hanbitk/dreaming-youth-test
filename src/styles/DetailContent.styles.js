@@ -34,4 +34,7 @@ export const StDetailFormButton = styled.div`
   border-top: 1px solid var(--color-gray);
   width: 100%;
   height: 56px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 `;

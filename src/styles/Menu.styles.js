@@ -28,11 +28,12 @@ export const StMenuItemLink = styled(Link)`
 
 export const StMenuList = styled.li`
   padding: 8px 40px;
-  color: ${(props) => (props.isactive ? 'var(--color-light-black)' : 'var(--color-gray-inactive)')};
-  background-color: ${(props) => props.isactive || null};
+  color: ${(props) =>
+    props.$isActive ? 'var(--color-light-black)' : 'var(--color-gray-inactive)'};
+  background-color: ${(props) => props.$isActive || null};
 
   &:hover {
-    background-color: ${(props) => (props.isactive ? null : 'var(--color-gray-hover)')};
-    color: ${(props) => (props.isactive ? null : 'var(--color-gray-inactive)')};
+    background-color: ${(props) => (props.$isActive ? null : 'var(--color-gray-hover)')};
+    color: ${(props) => (props.$isActive ? null : 'var(--color-gray-inactive)')};
   }
 `;
