@@ -8,6 +8,14 @@ export const StDetailContainer = styled.div`
   align-items: center;
 `;
 
+export const StInfo = styled.div`
+  border: 1px solid pink;
+  width: 100%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+`;
+
 export const StDetailHeader = styled.header`
   width: 943px;
   height: 64px;

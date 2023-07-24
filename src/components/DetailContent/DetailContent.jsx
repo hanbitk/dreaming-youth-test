@@ -4,9 +4,11 @@ import {
   StDetailForm,
   StDetailFormBox,
   StDetailFormButton,
-  StDetailHeader
+  StDetailHeader,
+  StInfo
 } from '../../styles/DetailContent.styles';
 import Button from '../Button/Button';
+import Input from '../Input/Input';
 
 function DetailContent() {
   return (
@@ -16,10 +18,13 @@ function DetailContent() {
       </StDetailHeader>
       <StDetailForm>
         <StDetailFormBox>
-          <div>
+          <StInfo>
             <label>정보 1</label>
             <p>정보 내용</p>
-          </div>
+          </StInfo>
+          <StInfo>
+            <Input />
+          </StInfo>
         </StDetailFormBox>
         <StDetailFormButton>
           <Button>저장</Button>
