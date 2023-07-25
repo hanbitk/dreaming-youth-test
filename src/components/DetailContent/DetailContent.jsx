@@ -10,6 +10,7 @@ import {
 import Button from '../Button/Button';
 import Input from '../Input/Input';
 import Info from '../Info/Info';
+import DatePicker from '../DatePicker/DatePicker';
 
 function DetailContent() {
   return (
@@ -23,17 +24,25 @@ function DetailContent() {
           <StInfo>
             <Info title='정보 1' description='정보 내용 1' />
           </StInfo>
+
           {/* 정보 2 */}
           <StInfo>
             <Input label='정보 2' />
           </StInfo>
+
           {/* 정보 3 */}
           <StInfo>
             <Info title='정보 3' description='정보 내용 3' />
           </StInfo>
+
           {/* 정보 4 */}
           <StInfo>
             <Input label='정보 4' />
+          </StInfo>
+
+          {/* 정보 5 */}
+          <StInfo>
+            <DatePicker title='날짜' />
           </StInfo>
         </StDetailFormBox>
         <StDetailFormButton>

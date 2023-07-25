@@ -1,5 +1,12 @@
 import styled from 'styled-components';
 
+export const StDiv = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 64px;
+`;
+
 // BUTTON STYLE //
 export const StButton = styled.button`
   width: 74px;
@@ -18,13 +25,6 @@ export const StButton = styled.button`
 `;
 
 // INPUT STYLE //
-export const StDiv = styled.div`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 64px;
-`;
-
 export const StLabel = styled.label`
   width: 140px;
 `;
@@ -42,6 +42,6 @@ export const StInput = styled.input`
 `;
 
 // INFO STYLE //
-export const StInfoTitle = styled.p`
+export const StTitle = styled.p`
   width: 140px;
 `;

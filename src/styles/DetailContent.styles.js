@@ -32,7 +32,6 @@ export const StDetailForm = styled.form`
 `;
 
 export const StDetailFormBox = styled.div`
-  border: 1px solid red;
   width: 100%;
   height: 422px;
   margin-block: 16px;
