@@ -16,6 +16,8 @@ export const GlobalStyles = createGlobalStyle`
     --color-light-gray: #DEDEDE;
     --color-cool-gray: #F6F7F8;
     --color-gray-hover: #F0F2F3;
+    --color-gray-select-hover: #BEBEBE;
+    --color-white-select-box: #FAFBFC;
     --color-gray-inactive: #777777;
 
     /* ============FONT SIZE============ */
