@@ -15,7 +15,6 @@ function Layout() {
 export default Layout;
 
 const StContainer = styled.div`
-  border: 1px solid red;
   width: 100%;
   max-width: 1280px;
   height: 100vh;
