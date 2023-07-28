@@ -11,8 +11,23 @@ import Button from '../Button/Button';
 import Input from '../Input/Input';
 import Info from '../Info/Info';
 import DatePicker from '../DatePicker/DatePicker';
+import { useQuery } from '@tanstack/react-query';
+import { getTest } from '../../api/api';
 
 function DetailContent() {
+  const { data, isLoading, isSuccess, isError } = useQuery({
+    queryKey: ['infos'],
+    queryFn: getTest
+  });
+
+  console.log('data ', data);
+  console.log('isLoading ', isLoading);
+  console.log('isSuccess ', isSuccess);
+  console.log('error ', isError);
+
+  if (isLoading) return <p>로딩중입니다...</p>;
+  if (isError) return <p>오류가 발생하였습니다...</p>;
+
   return (
     <StDetailContainer>
       <StDetailHeader>
