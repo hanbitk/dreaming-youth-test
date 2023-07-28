@@ -13,7 +13,7 @@ function Radiobox({ selectedRadioValue, selectedHandleOnChange, radioArray }) {
         return (
           <StInputRadioBox key={idx}>
             <StInputRadio
-              type='checkbox'
+              type='radio'
               id={select.id}
               name={select.name}
               checked={selectedRadioValue === select.name}
