@@ -42,7 +42,7 @@ export const StSelect = styled.div`
     props.$isFocused ? '3px solid var(--color-primary-light)' : '1px solid var(--color-gray)'};
   box-shadow: ${(props) =>
     props.$isFocused ? 'inset 0px 0px 0px 1px var(--color-primary)' : null};
-  padding: ${(props) => (props.$isFocused ? '5px 8px' : '5px 10px')};
+  padding: ${(props) => (props.$isFocused ? '5px 7px' : '5px 9px')};
   cursor: pointer;
 
   &:hover {

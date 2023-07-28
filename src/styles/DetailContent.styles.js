@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const StDetailContainer = styled.div`
-  border: 1px solid blue;
   width: 80%;
   display: flex;
   flex-direction: column;

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import 'react-datepicker/dist/react-datepicker.css';
 import { ko } from 'date-fns/esm/locale';
 import { getYear, getMonth } from 'date-fns';
@@ -9,13 +9,10 @@ import { StArrow, StDatePicker, StHeader, StSelectBox } from '../../styles/DateP
 import { StDiv, StTitle } from '../../styles/Common.styles';
 
 import back_default from '../../icons/DatePicker/calender_back_default.svg';
-// import back_hover from '../../icons/DatePicker/calender_back_hover.svg';
 import next_default from '../../icons/DatePicker/calender_next_default.svg';
-// import next_hover from '../../icons/DatePicker/calender_next_hover.svg';
 
-function DatePicker({ title }) {
-  const [isFocused, handleFocusBlurInput] = useFocus();
-  const [selectedDate, setSelectedDate] = useState(new Date());
+function DatePicker({ title, selectedDate, onChange }) {
+  const [isFocused, handleFocusBlurInput, datePickerRef] = useFocus();
 
   const years = range(2020, getYear(new Date()) + 1, 1)
     .join()
@@ -38,17 +35,17 @@ function DatePicker({ title }) {
   ];
 
   return (
-    <StDiv>
+    <StDiv ref={datePickerRef}>
       <StTitle>{title}</StTitle>
       <StDatePicker
         placeholderText='yyyy.mm.dd'
         selected={selectedDate}
-        shouldCloseOnSelect
         locale={ko}
         dateFormat='yyyy.MM.dd'
-        onChange={(date) => setSelectedDate(date)}
-        dayClassName={(d) =>
-          d.getDate() === selectedDate.getDate() ? 'selectedDay' : 'unselectedDay'
+        onChange={onChange}
+        className='custom-input'
+        dayClassName={(date) =>
+          date.getDate() === selectedDate.getDate() ? 'selectedDay' : 'unselectedDay'
         }
         onFocus={handleFocusBlurInput}
         onBlur={handleFocusBlurInput}
