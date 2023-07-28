@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 // import down_arrow from '../icons/SelectBox/gnb_down_arrow.svg';
+import checked from '../icons/check_checked.svg';
 
 export const StDiv = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 64px;
+  gap: '64px';
 `;
 
 // BUTTON STYLE //
@@ -91,6 +92,92 @@ export const StInput = styled.input`
   border-radius: 5px;
   padding: 5px 12px;
   color: var(--color-light-black);
+`;
+
+// INPUT CHECKBOX STYLE //
+
+export const StRadioDiv = styled.div`
+  width: 378px;
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+
+export const StRadioboxDiv = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 32px;
+`;
+
+export const StCheckedText = styled.p`
+  font-size: var(--font-small);
+  color: var(--color-red);
+`;
+
+export const StInputRadioBox = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const StInputRadioLabel = styled.label``;
+
+export const StInputRadio = styled.input`
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid var(--color-light-gray);
+  background-color: var(--color-white);
+  appearance: none;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+
+  &:hover {
+    border: 1px solid var(--color-gray-select-hover);
+  }
+
+  &:checked {
+    background: var(--color-white);
+    border: 5px solid var(--color-primary);
+  }
+`;
+
+// CHECKBOX STYLE
+export const StInputCheckbox = styled.input`
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  border: 1px solid var(--color-light-gray);
+  background-color: var(--color-white);
+  appearance: none;
+  margin-right: 8px;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid var(--color-gray-select-hover);
+  }
+
+  &:checked {
+    background: var(--color-primary);
+    background-image: url(${checked});
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border: transparent;
+  }
+`;
+
+export const StCheckBoxDiv = styled.div`
+  width: 378px;
+  height: 54px;
+  display: flex;
+  gap: 32px;
+`;
+
+export const StCheckboxDiv = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
 // INFO STYLE //

@@ -1,19 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { StDiv, StInput, StLabel } from '../../styles/Common.styles';
 import useFocus from '../../Hooks/useFocus';
 
-function Input({ label }) {
+function Input({ label, value, onChange, name }) {
   const [isFocused, handleFocusBlurInput] = useFocus();
-  const [value, setValue] = useState('');
-
-  const handleOnChange = (e) => setValue(e.target.value);
 
   return (
     <StDiv>
       <StLabel>{label}</StLabel>
       <StInput
         value={value}
-        onChange={handleOnChange}
+        name={name}
+        onChange={onChange}
         onFocus={handleFocusBlurInput}
         onBlur={handleFocusBlurInput}
         $isFocused={isFocused}
