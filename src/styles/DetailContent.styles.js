@@ -9,9 +9,8 @@ export const StDetailContainer = styled.div`
 `;
 
 export const StInfo = styled.div`
-  border: 1px solid pink;
   width: 100%;
-  height: 56px;
+  height: ${(props) => props.height || '56px'};
   display: flex;
   align-items: center;
 `;
